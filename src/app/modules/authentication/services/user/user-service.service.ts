@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { BaseServiceService } from 'src/app/shared/services/base-service.service';
+import { BaseServiceService } from 'src/app/modules/shared/services/base-service.service';
 import { IUserCreateDTO } from '../../dto/iuser-create-dto';
 import { BehaviorSubject } from 'rxjs';
 import { IUserLoginDTO } from '../../dto/iuser-login-dto';

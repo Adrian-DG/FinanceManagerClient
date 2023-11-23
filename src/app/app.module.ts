@@ -6,8 +6,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { HttpClientModule } from '@angular/common/http';
-import { GenericModule } from './shared/generic.module';
-import { MaterialModule } from './material/material.module';
+import { GenericModule } from './modules/shared/generic.module';
+import { MaterialModule } from './modules/material/material.module';
 
 @NgModule({
   declarations: [
