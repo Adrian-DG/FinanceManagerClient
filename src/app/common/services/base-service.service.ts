@@ -9,7 +9,7 @@ export abstract class BaseServiceService {
 
   abstract GetResource(): string;
 
-  private readonly endpoint: string = '';
+  protected readonly endpoint: string = '';
 
   constructor() { 
     const env = isDevMode() ? dev.api_url : prod.api_url;
