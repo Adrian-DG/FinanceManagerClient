@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { HttpClientModule } from '@angular/common/http';
-import { GenericModule } from './common/generic.module';
+import { GenericModule } from './shared/generic.module';
+import { MaterialModule } from './material/material.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { GenericModule } from './common/generic.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    GenericModule
+    GenericModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

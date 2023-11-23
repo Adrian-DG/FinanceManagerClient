@@ -1,0 +1,37 @@
+<div id="main-container">
+    <!-- toolbar -->
+    <mat-toolbar color="primary">
+        <mat-toolbar-row>
+            <div class="toolbar-links">
+                <button mat-icon-button (click)="sidenav.toggle()">
+                    <mat-icon>menu</mat-icon>
+                </button>
+                <span>FinanceManager.io</span>
+            </div>
+            <div  class="toolbar-links" *ngIf="true"> <!-- TODO: should listen to isAuthenticated observable -->
+                <a mat-button>
+					<button mat-button [matMenuTriggerFor]="afterMenu">
+						usuario <!-- TODO: should show username of current user -->
+					</button>
+					<mat-menu #afterMenu="matMenu" xPosition="after">
+						<button mat-menu-item>Salir</button>
+					</mat-menu>
+				</a>
+            </div>
+        </mat-toolbar-row>
+    </mat-toolbar>
+    <!-- sidenav -->
+    <mat-sidenav-container class="sidenav-container">
+        <!-- links -->
+        <mat-sidenav #sidenav class="sidenav">
+            <mat-nav-list>
+                <mat-list-item>LINK # 1</mat-list-item>
+                <mat-list-item>LINK # 2</mat-list-item>
+            </mat-nav-list>
+        </mat-sidenav>
+        <!-- content -->
+        <mat-sidenav-content class="sidenav-content">
+            <router-outlet></router-outlet>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</div>

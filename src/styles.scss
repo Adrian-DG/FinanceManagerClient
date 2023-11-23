@@ -2,3 +2,32 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+#main-container {
+	width: 100%;
+	min-height: 100vh;
+	height: auto;
+	overflow-y: auto;
+}
+
+.sidenav-container {
+	width: 100%;
+	height: 90vh;
+	overflow-y: auto;
+}
+
+.sidenav {
+	width: 20%;
+}
+
+.sidenav-content {
+    margin: 1em auto;
+    padding: 1em auto;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: whitesmoke;
+}

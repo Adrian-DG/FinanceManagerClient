@@ -5,7 +5,8 @@ const routes: Routes = [
   { 
     path: 'authenticate', 
     loadChildren: () => import('./authentication/authentication.module').then((m) => m.AuthenticationModule)
-  }
+  },
+  { path: '', redirectTo: 'authenticate', pathMatch: 'full' }
 ];
 
 @NgModule({
