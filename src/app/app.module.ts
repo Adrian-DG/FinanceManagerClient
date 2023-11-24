@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { GenericModule } from './modules/shared/generic.module';
 import { MaterialModule } from './modules/material/material.module';
+import { StoreModule } from '@ngrx/store';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MaterialModule } from './modules/material/material.module';
     BrowserAnimationsModule,
     HttpClientModule,
     GenericModule,
-    MaterialModule
+    MaterialModule,
+    StoreModule.forRoot({}, {})
   ],
   providers: [],
   bootstrap: [AppComponent]
